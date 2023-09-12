@@ -9,25 +9,28 @@ import Foundation
 import SwiftUI
 
 struct SymbolData: Identifiable {
-  let id = UUID()
-
+  let id: UUID
   let ticker: String
-  let name: String
-  let value: String
 
-  let todayPercent: String
-  let todayValue: String
-  let todayColor: Color
+  var name = ""
+  var price = ""
+  var imageURL: URL?
 
-  let monthPercent: String
-  let monthValue: String
-  let monthColor: Color
+  var todayPercent = ""
+  var todayValue = ""
+  var todayColor = Color.gray
 
-  let ytdPercent: String
-  let ytdValue: String
-  let ytdColor: Color
+  var monthPercent = ""
+  var monthValue = ""
+  var monthColor = Color.gray
 
-  var imageURL: URL? {
-    URL(string: "https://hapi-ticker-images.s3.amazonaws.com/\(ticker.uppercased()).png")
+  var ytdPercent = ""
+  var ytdValue = ""
+  var ytdColor = Color.gray
+
+  init(ticker: String) {
+    self.id = UUID()
+    self.ticker = ticker.uppercased()
+    self.imageURL = URL(string: "https://hapi-ticker-images.s3.amazonaws.com/\(self.ticker).png")
   }
 }

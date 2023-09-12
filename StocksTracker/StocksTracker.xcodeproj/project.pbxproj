@@ -17,6 +17,7 @@
 		B1B0B2712AB0A2B70018845B /* StocksApiEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B0B2702AB0A2B70018845B /* StocksApiEndpoint.swift */; };
 		B1B0B2732AB0ABCF0018845B /* StocksApiModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B0B2722AB0ABCF0018845B /* StocksApiModels.swift */; };
 		B1B0B2752AB0ABEA0018845B /* StocksApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B0B2742AB0ABEA0018845B /* StocksApi.swift */; };
+		B1B0B27A2AB0C7EF0018845B /* SymbolCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B0B2792AB0C7EF0018845B /* SymbolCardViewModel.swift */; };
 		B1ECB3002AAFEE3400C823C9 /* SymbolNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ECB2FF2AAFEE3400C823C9 /* SymbolNameView.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		B1B0B2702AB0A2B70018845B /* StocksApiEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksApiEndpoint.swift; sourceTree = "<group>"; };
 		B1B0B2722AB0ABCF0018845B /* StocksApiModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksApiModels.swift; sourceTree = "<group>"; };
 		B1B0B2742AB0ABEA0018845B /* StocksApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksApi.swift; sourceTree = "<group>"; };
+		B1B0B2792AB0C7EF0018845B /* SymbolCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolCardViewModel.swift; sourceTree = "<group>"; };
 		B1ECB2FF2AAFEE3400C823C9 /* SymbolNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolNameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				B120690F2AB008AB0048F22F /* SymbolData.swift */,
+				B1B0B2792AB0C7EF0018845B /* SymbolCardViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				B1108A892AAF9AA80039B944 /* StocksTrackerApp.swift in Sources */,
 				B1ECB3002AAFEE3400C823C9 /* SymbolNameView.swift in Sources */,
 				B1B0B2732AB0ABCF0018845B /* StocksApiModels.swift in Sources */,
+				B1B0B27A2AB0C7EF0018845B /* SymbolCardViewModel.swift in Sources */,
 				B12069102AB008AB0048F22F /* SymbolData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

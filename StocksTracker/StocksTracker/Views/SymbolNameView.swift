@@ -33,7 +33,7 @@ struct SymbolNameView: View {
 
           Spacer()
 
-          Text(data.value)
+          Text(data.price)
         })
         .font(.largeTitle)
         .foregroundStyle(.primary)

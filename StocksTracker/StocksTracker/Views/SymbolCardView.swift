@@ -8,12 +8,16 @@
 import SwiftUI
 
 struct SymbolCardView: View {
-  var data: SymbolData
+  @ObservedObject private var viewModel: SymbolCardViewModel
+
+  init(ticket: String) {
+    self.viewModel = .init(ticket: ticket)
+  }
 
   var body: some View {
     VStack(alignment: .leading, spacing: 20, content: {
-      SymbolNameView(data: data)
-      SymbolPerfView(data: data)
+      SymbolNameView(data: viewModel.data)
+      SymbolPerfView(data: viewModel.data)
     })
     .padding()
     .overlay(
@@ -21,9 +25,12 @@ struct SymbolCardView: View {
         .stroke(.primary, lineWidth: 2)
     )
     .frame(width: 300)
+    .task {
+      await viewModel.quoteShort()
+    }
   }
 }
 
 #Preview {
-  SymbolCardView(data: PreviewProvider.nvidia)
+  SymbolCardView(ticket: "NVDA")
 }
