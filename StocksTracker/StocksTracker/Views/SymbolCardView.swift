@@ -24,9 +24,9 @@ struct SymbolCardView: View {
       RoundedRectangle(cornerRadius: 16)
         .stroke(.primary, lineWidth: 2)
     )
-    .frame(width: 300)
+    .frame(width: 350)
     .task {
-      await viewModel.quoteShort()
+      await viewModel.quote()
     }
   }
 }
