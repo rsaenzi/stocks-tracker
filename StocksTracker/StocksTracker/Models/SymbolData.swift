@@ -11,7 +11,6 @@ import SwiftUI
 struct SymbolData: Identifiable {
   let id = UUID()
 
-  let image: Image
   let ticker: String
   let name: String
   let value: String
@@ -27,4 +26,8 @@ struct SymbolData: Identifiable {
   let ytdPercent: String
   let ytdValue: String
   let ytdColor: Color
+
+  var imageURL: URL? {
+    URL(string: "https://hapi-ticker-images.s3.amazonaws.com/\(ticker.uppercased()).png")
+  }
 }

@@ -12,13 +12,19 @@ struct SymbolNameView: View {
 
   var body: some View {
     HStack(alignment: .center, spacing: 10, content: {
-      data.image
-        .resizable()
-        .aspectRatio(contentMode: .fit)
-        .frame(width: 50, height: 50)
-        .background(.white)
-        .clipShape(Circle())
-        .shadow(radius: 5)
+
+      AsyncImage(url: data.imageURL) { image in
+        image
+          .resizable()
+          .aspectRatio(contentMode: .fit)
+          .frame(width: 50, height: 50)
+          .background(.white)
+          .clipShape(Circle())
+          .shadow(radius: 5)
+
+      } placeholder: {
+        ProgressView()
+      }
 
       VStack(alignment: .leading, content: {
 

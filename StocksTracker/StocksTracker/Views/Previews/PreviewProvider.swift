@@ -10,7 +10,6 @@ import SwiftUI
 
 struct PreviewProvider {
   static let nvidia = SymbolData(
-    image: Image("MSFT"),
     ticker: "NVDA",
     name: "NVIDIA Corp",
     value: "$451.78",
