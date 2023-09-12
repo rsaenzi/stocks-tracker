@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct SymbolNameView: View {
+  var data: SymbolData
+
   var body: some View {
     HStack(alignment: .center, spacing: 10, content: {
-      Image("MSFT")
+      data.image
         .resizable()
         .aspectRatio(contentMode: .fit)
         .frame(width: 50, height: 50)
@@ -19,19 +21,18 @@ struct SymbolNameView: View {
         .shadow(radius: 5)
 
       VStack(alignment: .leading, content: {
+
         HStack(alignment: .center, content: {
-          Text("MSFT")
-            .font(.largeTitle)
-            .foregroundStyle(.primary)
+          Text(data.ticker)
 
           Spacer()
 
-          Text("$337.94")
-            .font(.largeTitle)
-            .foregroundStyle(.primary)
+          Text(data.value)
         })
+        .font(.largeTitle)
+        .foregroundStyle(.primary)
 
-        Text("Microsoft Corp.")
+        Text(data.name)
           .font(.caption)
           .foregroundStyle(.secondary)
       })
@@ -40,5 +41,5 @@ struct SymbolNameView: View {
 }
 
 #Preview {
-  SymbolNameView()
+  SymbolNameView(data: PreviewProvider.nvidia)
 }

@@ -9,9 +9,9 @@ import SwiftUI
 
 @main
 struct StocksTrackerApp: App {
-    var body: some Scene {
-        WindowGroup {
-            SymbolCardView()
-        }
+  var body: some Scene {
+    WindowGroup {
+      SymbolCardView(data: PreviewProvider.nvidia)
     }
+  }
 }

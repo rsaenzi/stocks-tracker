@@ -8,57 +8,51 @@
 import SwiftUI
 
 struct SymbolPerfView: View {
+  var data: SymbolData
+
   var body: some View {
     HStack(alignment: .center, content: {
+
       VStack(alignment: .leading, spacing: 5, content: {
         Text("Today")
-          .font(.headline)
-          .foregroundStyle(.secondary)
-
         Text("Month")
-          .font(.headline)
-          .foregroundStyle(.secondary)
-
         Text("YTD")
-          .font(.headline)
-          .foregroundStyle(.secondary)
       })
+      .font(.headline)
+      .foregroundStyle(.secondary)
 
       Spacer()
 
       VStack(alignment: .trailing, spacing: 5, content: {
-        Text("↑ 1.10%")
-          .font(.subheadline)
-          .foregroundStyle(.green)
+        Text(data.todayPercent)
+          .foregroundStyle(data.todayColor)
 
-        Text("↑ 5.27%")
-          .font(.subheadline)
-          .foregroundStyle(.green)
+        Text(data.monthPercent)
+          .foregroundStyle(data.monthColor)
 
-        Text("↑ 41.91%")
-          .font(.subheadline)
-          .foregroundStyle(.green)
+        Text(data.ytdPercent)
+          .foregroundStyle(data.ytdColor)
       })
+      .font(.subheadline)
 
       Spacer()
 
       VStack(alignment: .trailing, spacing: 5, content: {
-        Text("+ $3.67")
-          .font(.subheadline)
-          .foregroundStyle(.green)
+        Text(data.todayValue)
+          .foregroundStyle(data.todayColor)
 
-        Text("+ $16.93")
-          .font(.subheadline)
-          .foregroundStyle(.green)
+        Text(data.monthValue)
+          .foregroundStyle(data.monthColor)
 
-        Text("+ $98.12")
-          .font(.subheadline)
-          .foregroundStyle(.green)
+        Text(data.ytdValue)
+          .foregroundStyle(data.ytdColor)
       })
+      .font(.subheadline)
+
     })
   }
 }
 
 #Preview {
-  SymbolPerfView()
+  SymbolPerfView(data: PreviewProvider.nvidia)
 }
