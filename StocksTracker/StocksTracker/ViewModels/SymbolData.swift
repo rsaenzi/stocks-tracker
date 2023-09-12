@@ -12,20 +12,20 @@ struct SymbolData: Identifiable {
   let id: UUID
   let ticker: String
 
-  var name = ""
-  var price = ""
+  var name = " "
+  var price = " "
   var imageURL: URL?
 
-  var todayPercent = ""
-  var todayValue = ""
+  var todayPercent = " "
+  var todayValue = " "
   var todayColor = Color.gray
 
-  var monthPercent = ""
-  var monthValue = ""
+  var monthPercent = " "
+  var monthValue = " "
   var monthColor = Color.gray
 
-  var ytdPercent = ""
-  var ytdValue = ""
+  var ytdPercent = " "
+  var ytdValue = " "
   var ytdColor = Color.gray
 
   init(ticker: String) {
