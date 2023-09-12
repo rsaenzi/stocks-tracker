@@ -15,6 +15,9 @@
 		B12069102AB008AB0048F22F /* SymbolData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B120690F2AB008AB0048F22F /* SymbolData.swift */; };
 		B12069122AB00BC70048F22F /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12069112AB00BC70048F22F /* PreviewProvider.swift */; };
 		B1B0B2712AB0A2B70018845B /* StocksApiEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B0B2702AB0A2B70018845B /* StocksApiEndpoint.swift */; };
+		B1B0B2732AB0ABCF0018845B /* StocksApiModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B0B2722AB0ABCF0018845B /* StocksApiModels.swift */; };
+		B1B0B2752AB0ABEA0018845B /* StocksApiConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B0B2742AB0ABEA0018845B /* StocksApiConnection.swift */; };
+		B1B0B2772AB0B2930018845B /* StocksApiDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B0B2762AB0B2930018845B /* StocksApiDecoder.swift */; };
 		B1ECB3002AAFEE3400C823C9 /* SymbolNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ECB2FF2AAFEE3400C823C9 /* SymbolNameView.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +32,9 @@
 		B120690F2AB008AB0048F22F /* SymbolData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolData.swift; sourceTree = "<group>"; };
 		B12069112AB00BC70048F22F /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		B1B0B2702AB0A2B70018845B /* StocksApiEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksApiEndpoint.swift; sourceTree = "<group>"; };
+		B1B0B2722AB0ABCF0018845B /* StocksApiModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksApiModels.swift; sourceTree = "<group>"; };
+		B1B0B2742AB0ABEA0018845B /* StocksApiConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksApiConnection.swift; sourceTree = "<group>"; };
+		B1B0B2762AB0B2930018845B /* StocksApiDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksApiDecoder.swift; sourceTree = "<group>"; };
 		B1ECB2FF2AAFEE3400C823C9 /* SymbolNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolNameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,7 +106,10 @@
 		B1B0B26F2AB0A2740018845B /* StocksAPI */ = {
 			isa = PBXGroup;
 			children = (
+				B1B0B2722AB0ABCF0018845B /* StocksApiModels.swift */,
 				B1B0B2702AB0A2B70018845B /* StocksApiEndpoint.swift */,
+				B1B0B2742AB0ABEA0018845B /* StocksApiConnection.swift */,
+				B1B0B2762AB0B2930018845B /* StocksApiDecoder.swift */,
 			);
 			path = StocksAPI;
 			sourceTree = "<group>";
@@ -187,11 +196,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1B0B2712AB0A2B70018845B /* StocksApiEndpoint.swift in Sources */,
+				B1B0B2752AB0ABEA0018845B /* StocksApiConnection.swift in Sources */,
 				B1108A8B2AAF9AA80039B944 /* SymbolCardView.swift in Sources */,
 				B12069122AB00BC70048F22F /* PreviewProvider.swift in Sources */,
 				B120690E2AAFFD720048F22F /* SymbolPerfView.swift in Sources */,
 				B1108A892AAF9AA80039B944 /* StocksTrackerApp.swift in Sources */,
 				B1ECB3002AAFEE3400C823C9 /* SymbolNameView.swift in Sources */,
+				B1B0B2732AB0ABCF0018845B /* StocksApiModels.swift in Sources */,
+				B1B0B2772AB0B2930018845B /* StocksApiDecoder.swift in Sources */,
 				B12069102AB008AB0048F22F /* SymbolData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

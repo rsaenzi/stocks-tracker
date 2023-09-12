@@ -15,8 +15,8 @@ private let baseURL = "https://financialmodelingprep.com/api/v3"
  */
 enum StocksApiEndpoint {
   case quote(symbols: [String])
-  case stockPriceChange(symbols: [String])
   case quoteShort(symbols: [String])
+  case priceChange(symbols: [String])
   case profile(symbols: [String])
 }
 
@@ -24,9 +24,9 @@ extension StocksApiEndpoint {
   var url: URL {
     switch self {
     case let .quote(symbols),
-      let .stockPriceChange(symbols),
-      let .quoteShort(symbols),
-      let .profile(symbols):
+         let .quoteShort(symbols),
+         let .priceChange(symbols),
+         let .profile(symbols):
       return URL(string: "\(baseURL)/\(endpointURL)/\(joined(symbols))?apikey=\(apiKey)")!
     }
   }
@@ -36,11 +36,11 @@ extension StocksApiEndpoint {
     case .quote:
       return "quote"
 
-    case .stockPriceChange:
-      return "stock-price-change"
-
     case .quoteShort:
       return "quote-short"
+
+    case .priceChange:
+      return "stock-price-change"
 
     case .profile:
       return "profile"
