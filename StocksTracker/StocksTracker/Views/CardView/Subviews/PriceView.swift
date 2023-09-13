@@ -59,5 +59,5 @@ struct PriceView: View {
 }
 
 #Preview {
-  PriceView(data: PreviewProvider.nvidia.data)
+  PriceView(data: PreviewProvider.test.data)
 }

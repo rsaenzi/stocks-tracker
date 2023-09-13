@@ -12,7 +12,7 @@ private let spaces = "       "
 private let initColor = Color.gray
 
 struct StockData: Identifiable {
-  let id: UUID
+  let id = UUID()
   let ticker: String
 
   // Header
@@ -37,7 +37,6 @@ struct StockData: Identifiable {
   var ytdColor = initColor
 
   init(ticker: String) {
-    self.id = UUID()
     self.ticker = ticker.uppercased()
     self.imageURL = URL(string: "https://hapi-ticker-images.s3.amazonaws.com/\(self.ticker).png")
   }

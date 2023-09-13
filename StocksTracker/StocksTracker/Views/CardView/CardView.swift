@@ -10,8 +10,8 @@ import SwiftUI
 struct CardView: View {
   @ObservedObject private var viewModel: CardViewModel
 
-  init(viewModel: CardViewModel) {
-    self.viewModel = viewModel
+  init(ticker: String) {
+    self.viewModel = .init(ticket: ticker)
   }
 
   var body: some View {
@@ -24,7 +24,6 @@ struct CardView: View {
       RoundedRectangle(cornerRadius: 16)
         .stroke(.secondary, lineWidth: 2)
     )
-    .frame(width: 400)
     .task {
       await viewModel.viewWillAppear()
     }
@@ -32,5 +31,5 @@ struct CardView: View {
 }
 
 #Preview {
-  CardView(viewModel: PreviewProvider.nvidia)
+  CardView(ticker: PreviewProvider.test.data.ticker)
 }

@@ -11,7 +11,7 @@ import SwiftUI
 struct StocksTrackerApp: App {
   var body: some Scene {
     WindowGroup {
-      CardView(viewModel: .init(ticket: "TSLA"))
+      ListView()
     }
   }
 }

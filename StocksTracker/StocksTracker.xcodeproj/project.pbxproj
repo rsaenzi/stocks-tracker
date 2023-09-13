@@ -14,6 +14,9 @@
 		B120690E2AAFFD720048F22F /* PriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B120690D2AAFFD720048F22F /* PriceView.swift */; };
 		B12069102AB008AB0048F22F /* StockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B120690F2AB008AB0048F22F /* StockData.swift */; };
 		B12069122AB00BC70048F22F /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12069112AB00BC70048F22F /* PreviewProvider.swift */; };
+		B182773B2AB1434B00077FC3 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B182773A2AB1434B00077FC3 /* ListView.swift */; };
+		B182773E2AB143CE00077FC3 /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B182773D2AB143CE00077FC3 /* ListItemView.swift */; };
+		B18277402AB148B400077FC3 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B182773F2AB148B400077FC3 /* ListViewModel.swift */; };
 		B1B0B2712AB0A2B70018845B /* StocksApiEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B0B2702AB0A2B70018845B /* StocksApiEndpoint.swift */; };
 		B1B0B2732AB0ABCF0018845B /* StocksApiModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B0B2722AB0ABCF0018845B /* StocksApiModels.swift */; };
 		B1B0B2752AB0ABEA0018845B /* StocksApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B0B2742AB0ABEA0018845B /* StocksApi.swift */; };
@@ -31,6 +34,9 @@
 		B120690D2AAFFD720048F22F /* PriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceView.swift; sourceTree = "<group>"; };
 		B120690F2AB008AB0048F22F /* StockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockData.swift; sourceTree = "<group>"; };
 		B12069112AB00BC70048F22F /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
+		B182773A2AB1434B00077FC3 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		B182773D2AB143CE00077FC3 /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
+		B182773F2AB148B400077FC3 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		B1B0B2702AB0A2B70018845B /* StocksApiEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksApiEndpoint.swift; sourceTree = "<group>"; };
 		B1B0B2722AB0ABCF0018845B /* StocksApiModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksApiModels.swift; sourceTree = "<group>"; };
 		B1B0B2742AB0ABEA0018845B /* StocksApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksApi.swift; sourceTree = "<group>"; };
@@ -96,6 +102,26 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		B18277392AB1431900077FC3 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				B1B0B27C2AB131320018845B /* Subviews */,
+				B1B0B27B2AB131050018845B /* Models */,
+				B1108A8A2AAF9AA80039B944 /* CardView.swift */,
+			);
+			path = CardView;
+			sourceTree = "<group>";
+		};
+		B182773C2AB143A900077FC3 /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				B182773A2AB1434B00077FC3 /* ListView.swift */,
+				B182773D2AB143CE00077FC3 /* ListItemView.swift */,
+				B182773F2AB148B400077FC3 /* ListViewModel.swift */,
+			);
+			path = ListView;
+			sourceTree = "<group>";
+		};
 		B1B0B26F2AB0A2740018845B /* StocksAPI */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,9 +152,8 @@
 		B1ECB2FE2AAFEDE700C823C9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B1B0B27C2AB131320018845B /* Subviews */,
-				B1B0B27B2AB131050018845B /* Models */,
-				B1108A8A2AAF9AA80039B944 /* CardView.swift */,
+				B182773C2AB143A900077FC3 /* ListView */,
+				B18277392AB1431900077FC3 /* CardView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -204,12 +229,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1B0B2712AB0A2B70018845B /* StocksApiEndpoint.swift in Sources */,
+				B182773B2AB1434B00077FC3 /* ListView.swift in Sources */,
 				B1B0B2752AB0ABEA0018845B /* StocksApi.swift in Sources */,
+				B182773E2AB143CE00077FC3 /* ListItemView.swift in Sources */,
 				B1108A8B2AAF9AA80039B944 /* CardView.swift in Sources */,
 				B12069122AB00BC70048F22F /* PreviewProvider.swift in Sources */,
 				B120690E2AAFFD720048F22F /* PriceView.swift in Sources */,
 				B1108A892AAF9AA80039B944 /* StocksTrackerApp.swift in Sources */,
 				B1ECB3002AAFEE3400C823C9 /* HeaderView.swift in Sources */,
+				B18277402AB148B400077FC3 /* ListViewModel.swift in Sources */,
 				B1B0B2732AB0ABCF0018845B /* StocksApiModels.swift in Sources */,
 				B1B0B27A2AB0C7EF0018845B /* CardViewModel.swift in Sources */,
 				B12069102AB008AB0048F22F /* StockData.swift in Sources */,

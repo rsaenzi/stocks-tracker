@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 struct PreviewProvider {
-  static var nvidia: CardViewModel {
+  static var test: CardViewModel {
     let model = CardViewModel(ticket: "MSFT")
     model.data.name = "Microsoft Corp"
     model.data.price = "$330.77"

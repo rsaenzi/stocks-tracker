@@ -51,5 +51,5 @@ struct HeaderView: View {
 }
 
 #Preview {
-  HeaderView(data: PreviewProvider.nvidia.data)
+  HeaderView(data: PreviewProvider.test.data)
 }
