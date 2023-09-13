@@ -8,34 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		B1108A892AAF9AA80039B944 /* StocksTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1108A882AAF9AA80039B944 /* StocksTrackerApp.swift */; };
-		B1108A8B2AAF9AA80039B944 /* SymbolCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1108A8A2AAF9AA80039B944 /* SymbolCardView.swift */; };
+		B1108A8B2AAF9AA80039B944 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1108A8A2AAF9AA80039B944 /* CardView.swift */; };
 		B1108A8D2AAF9AA90039B944 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1108A8C2AAF9AA90039B944 /* Assets.xcassets */; };
 		B1108A912AAF9AA90039B944 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1108A902AAF9AA90039B944 /* Preview Assets.xcassets */; };
-		B120690E2AAFFD720048F22F /* SymbolPerfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B120690D2AAFFD720048F22F /* SymbolPerfView.swift */; };
-		B12069102AB008AB0048F22F /* SymbolData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B120690F2AB008AB0048F22F /* SymbolData.swift */; };
+		B120690E2AAFFD720048F22F /* PriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B120690D2AAFFD720048F22F /* PriceView.swift */; };
+		B12069102AB008AB0048F22F /* StockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B120690F2AB008AB0048F22F /* StockData.swift */; };
 		B12069122AB00BC70048F22F /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12069112AB00BC70048F22F /* PreviewProvider.swift */; };
 		B1B0B2712AB0A2B70018845B /* StocksApiEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B0B2702AB0A2B70018845B /* StocksApiEndpoint.swift */; };
 		B1B0B2732AB0ABCF0018845B /* StocksApiModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B0B2722AB0ABCF0018845B /* StocksApiModels.swift */; };
 		B1B0B2752AB0ABEA0018845B /* StocksApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B0B2742AB0ABEA0018845B /* StocksApi.swift */; };
-		B1B0B27A2AB0C7EF0018845B /* SymbolCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B0B2792AB0C7EF0018845B /* SymbolCardViewModel.swift */; };
-		B1ECB3002AAFEE3400C823C9 /* SymbolNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ECB2FF2AAFEE3400C823C9 /* SymbolNameView.swift */; };
+		B1B0B27A2AB0C7EF0018845B /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B0B2792AB0C7EF0018845B /* CardViewModel.swift */; };
+		B1ECB3002AAFEE3400C823C9 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ECB2FF2AAFEE3400C823C9 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B1108A852AAF9AA80039B944 /* StocksTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StocksTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1108A882AAF9AA80039B944 /* StocksTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksTrackerApp.swift; sourceTree = "<group>"; };
-		B1108A8A2AAF9AA80039B944 /* SymbolCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolCardView.swift; sourceTree = "<group>"; };
+		B1108A8A2AAF9AA80039B944 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		B1108A8C2AAF9AA90039B944 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1108A8E2AAF9AA90039B944 /* StocksTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StocksTracker.entitlements; sourceTree = "<group>"; };
 		B1108A902AAF9AA90039B944 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B120690D2AAFFD720048F22F /* SymbolPerfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolPerfView.swift; sourceTree = "<group>"; };
-		B120690F2AB008AB0048F22F /* SymbolData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolData.swift; sourceTree = "<group>"; };
+		B120690D2AAFFD720048F22F /* PriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceView.swift; sourceTree = "<group>"; };
+		B120690F2AB008AB0048F22F /* StockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockData.swift; sourceTree = "<group>"; };
 		B12069112AB00BC70048F22F /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		B1B0B2702AB0A2B70018845B /* StocksApiEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksApiEndpoint.swift; sourceTree = "<group>"; };
 		B1B0B2722AB0ABCF0018845B /* StocksApiModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksApiModels.swift; sourceTree = "<group>"; };
 		B1B0B2742AB0ABEA0018845B /* StocksApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksApi.swift; sourceTree = "<group>"; };
-		B1B0B2792AB0C7EF0018845B /* SymbolCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolCardViewModel.swift; sourceTree = "<group>"; };
-		B1ECB2FF2AAFEE3400C823C9 /* SymbolNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolNameView.swift; sourceTree = "<group>"; };
+		B1B0B2792AB0C7EF0018845B /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		B1ECB2FF2AAFEE3400C823C9 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +82,7 @@
 		B1108A8F2AAF9AA90039B944 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				B12069112AB00BC70048F22F /* PreviewProvider.swift */,
 				B1108A902AAF9AA90039B944 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -90,18 +91,9 @@
 		B1108A972AAFC4490039B944 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				B120690F2AB008AB0048F22F /* SymbolData.swift */,
-				B1B0B2792AB0C7EF0018845B /* SymbolCardViewModel.swift */,
+				B120690F2AB008AB0048F22F /* StockData.swift */,
 			);
 			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		B12069132AB00CCB0048F22F /* Previews */ = {
-			isa = PBXGroup;
-			children = (
-				B12069112AB00BC70048F22F /* PreviewProvider.swift */,
-			);
-			path = Previews;
 			sourceTree = "<group>";
 		};
 		B1B0B26F2AB0A2740018845B /* StocksAPI */ = {
@@ -114,13 +106,29 @@
 			path = StocksAPI;
 			sourceTree = "<group>";
 		};
+		B1B0B27B2AB131050018845B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B1B0B2792AB0C7EF0018845B /* CardViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B1B0B27C2AB131320018845B /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				B1ECB2FF2AAFEE3400C823C9 /* HeaderView.swift */,
+				B120690D2AAFFD720048F22F /* PriceView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
 		B1ECB2FE2AAFEDE700C823C9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B12069132AB00CCB0048F22F /* Previews */,
-				B1108A8A2AAF9AA80039B944 /* SymbolCardView.swift */,
-				B1ECB2FF2AAFEE3400C823C9 /* SymbolNameView.swift */,
-				B120690D2AAFFD720048F22F /* SymbolPerfView.swift */,
+				B1B0B27C2AB131320018845B /* Subviews */,
+				B1B0B27B2AB131050018845B /* Models */,
+				B1108A8A2AAF9AA80039B944 /* CardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -197,14 +205,14 @@
 			files = (
 				B1B0B2712AB0A2B70018845B /* StocksApiEndpoint.swift in Sources */,
 				B1B0B2752AB0ABEA0018845B /* StocksApi.swift in Sources */,
-				B1108A8B2AAF9AA80039B944 /* SymbolCardView.swift in Sources */,
+				B1108A8B2AAF9AA80039B944 /* CardView.swift in Sources */,
 				B12069122AB00BC70048F22F /* PreviewProvider.swift in Sources */,
-				B120690E2AAFFD720048F22F /* SymbolPerfView.swift in Sources */,
+				B120690E2AAFFD720048F22F /* PriceView.swift in Sources */,
 				B1108A892AAF9AA80039B944 /* StocksTrackerApp.swift in Sources */,
-				B1ECB3002AAFEE3400C823C9 /* SymbolNameView.swift in Sources */,
+				B1ECB3002AAFEE3400C823C9 /* HeaderView.swift in Sources */,
 				B1B0B2732AB0ABCF0018845B /* StocksApiModels.swift in Sources */,
-				B1B0B27A2AB0C7EF0018845B /* SymbolCardViewModel.swift in Sources */,
-				B12069102AB008AB0048F22F /* SymbolData.swift in Sources */,
+				B1B0B27A2AB0C7EF0018845B /* CardViewModel.swift in Sources */,
+				B12069102AB008AB0048F22F /* StockData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

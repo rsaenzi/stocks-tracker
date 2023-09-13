@@ -8,24 +8,24 @@
 import Foundation
 
 class StocksApi {
-  static func quotes(from symbols: [String]) async -> [StocksApiQuote] {
-    guard let data = await connect(to: .quote(symbols: symbols)) else {
-      return []
-    }
-
-    guard let result: [StocksApiQuote] = decode(from: data) else {
-      return []
-    }
-
-    return result
-  }
-
   static func quotesShort(from symbols: [String]) async -> [StocksApiQuoteShort] {
     guard let data = await connect(to: .quoteShort(symbols: symbols)) else {
       return []
     }
 
     guard let result: [StocksApiQuoteShort] = decode(from: data) else {
+      return []
+    }
+
+    return result
+  }
+
+  static func quotes(from symbols: [String]) async -> [StocksApiQuote] {
+    guard let data = await connect(to: .quote(symbols: symbols)) else {
+      return []
+    }
+
+    guard let result: [StocksApiQuote] = decode(from: data) else {
       return []
     }
 

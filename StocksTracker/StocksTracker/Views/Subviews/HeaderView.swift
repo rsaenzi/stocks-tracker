@@ -1,5 +1,5 @@
 //
-//  SymbolNameView.swift
+//  HeaderView.swift
 //  StocksTracker
 //
 //  Created by Rigoberto Saenz on 11/09/23.
@@ -7,8 +7,12 @@
 
 import SwiftUI
 
-struct SymbolNameView: View {
-  var data: SymbolData
+struct HeaderView: View {
+  private var data: StockData
+
+  init(data: StockData) {
+    self.data = data
+  }
 
   var body: some View {
     HStack(alignment: .center, spacing: 10, content: {
@@ -47,5 +51,5 @@ struct SymbolNameView: View {
 }
 
 #Preview {
-  SymbolNameView(data: PreviewProvider.nvidia)
+  HeaderView(data: PreviewProvider.nvidia.data)
 }

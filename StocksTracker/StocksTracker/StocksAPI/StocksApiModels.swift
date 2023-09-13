@@ -7,6 +7,11 @@
 
 import Foundation
 
+struct StocksApiQuoteShort: Codable {
+  let symbol: String
+  let price: Float
+}
+
 struct StocksApiQuote: Codable {
   let symbol: String
   let name: String
@@ -18,24 +23,34 @@ struct StocksApiQuote: Codable {
   let pe: Float
 }
 
-struct StocksApiQuoteShort: Codable {
-  let symbol: String
-  let price: Float
-}
-
 struct StocksApiPriceChange: Codable {
   let symbol: String
-  let _1D: Float
-  let _5D: Float
-  let _1M: Float
-  let _3M: Float
-  let _6M: Float
+  let oneDay: Float
+  let fiveDays: Float
+  let oneMonth: Float
+  let threeMonths: Float
+  let sixMonths: Float
   let ytd: Float
-  let _1Y: Float
-  let _3Y: Float
-  let _5Y: Float
-  let _10Y: Float
+  let oneYear: Float
+  let threeYears: Float
+  let fiveYears: Float
+  let tenYears: Float
   let max: Float
+
+  enum CodingKeys: String, CodingKey {
+    case symbol = "symbol"
+    case oneDay = "1D"
+    case fiveDays = "5D"
+    case oneMonth = "1M"
+    case threeMonths = "3M"
+    case sixMonths = "6M"
+    case ytd = "ytd"
+    case oneYear = "1Y"
+    case threeYears = "3Y"
+    case fiveYears = "5Y"
+    case tenYears = "10Y"
+    case max = "max"
+  }
 }
 
 struct StocksApiProfile: Codable {
