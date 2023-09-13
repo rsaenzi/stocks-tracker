@@ -1,5 +1,5 @@
 //
-//  ListViewModel.swift
+//  TwoColumnsItemViewModel.swift
 //  StocksTracker
 //
 //  Created by Rigoberto Saenz on 12/09/23.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ListViewModel: Identifiable {
+class TwoColumnsItemViewModel: Identifiable {
   let id = UUID()
   let ticker: String
 

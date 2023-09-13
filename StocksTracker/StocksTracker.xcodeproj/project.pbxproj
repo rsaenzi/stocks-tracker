@@ -14,9 +14,9 @@
 		B120690E2AAFFD720048F22F /* PriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B120690D2AAFFD720048F22F /* PriceView.swift */; };
 		B12069102AB008AB0048F22F /* StockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B120690F2AB008AB0048F22F /* StockData.swift */; };
 		B12069122AB00BC70048F22F /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12069112AB00BC70048F22F /* PreviewProvider.swift */; };
-		B182773B2AB1434B00077FC3 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B182773A2AB1434B00077FC3 /* ListView.swift */; };
-		B182773E2AB143CE00077FC3 /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B182773D2AB143CE00077FC3 /* ListItemView.swift */; };
-		B18277402AB148B400077FC3 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B182773F2AB148B400077FC3 /* ListViewModel.swift */; };
+		B182773B2AB1434B00077FC3 /* TwoColumnsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B182773A2AB1434B00077FC3 /* TwoColumnsView.swift */; };
+		B182773E2AB143CE00077FC3 /* TwoColumnsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B182773D2AB143CE00077FC3 /* TwoColumnsItemView.swift */; };
+		B18277402AB148B400077FC3 /* TwoColumnsItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B182773F2AB148B400077FC3 /* TwoColumnsItemViewModel.swift */; };
 		B1B0B2712AB0A2B70018845B /* StocksApiEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B0B2702AB0A2B70018845B /* StocksApiEndpoint.swift */; };
 		B1B0B2732AB0ABCF0018845B /* StocksApiModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B0B2722AB0ABCF0018845B /* StocksApiModels.swift */; };
 		B1B0B2752AB0ABEA0018845B /* StocksApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B0B2742AB0ABEA0018845B /* StocksApi.swift */; };
@@ -34,9 +34,9 @@
 		B120690D2AAFFD720048F22F /* PriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceView.swift; sourceTree = "<group>"; };
 		B120690F2AB008AB0048F22F /* StockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockData.swift; sourceTree = "<group>"; };
 		B12069112AB00BC70048F22F /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
-		B182773A2AB1434B00077FC3 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
-		B182773D2AB143CE00077FC3 /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
-		B182773F2AB148B400077FC3 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		B182773A2AB1434B00077FC3 /* TwoColumnsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoColumnsView.swift; sourceTree = "<group>"; };
+		B182773D2AB143CE00077FC3 /* TwoColumnsItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoColumnsItemView.swift; sourceTree = "<group>"; };
+		B182773F2AB148B400077FC3 /* TwoColumnsItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoColumnsItemViewModel.swift; sourceTree = "<group>"; };
 		B1B0B2702AB0A2B70018845B /* StocksApiEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksApiEndpoint.swift; sourceTree = "<group>"; };
 		B1B0B2722AB0ABCF0018845B /* StocksApiModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksApiModels.swift; sourceTree = "<group>"; };
 		B1B0B2742AB0ABEA0018845B /* StocksApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksApi.swift; sourceTree = "<group>"; };
@@ -112,14 +112,37 @@
 			path = CardView;
 			sourceTree = "<group>";
 		};
-		B182773C2AB143A900077FC3 /* ListView */ = {
+		B18277412AB26B4900077FC3 /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
-				B182773A2AB1434B00077FC3 /* ListView.swift */,
-				B182773D2AB143CE00077FC3 /* ListItemView.swift */,
-				B182773F2AB148B400077FC3 /* ListViewModel.swift */,
+				B182773D2AB143CE00077FC3 /* TwoColumnsItemView.swift */,
 			);
-			path = ListView;
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		B18277422AB26B5600077FC3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B182773F2AB148B400077FC3 /* TwoColumnsItemViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B18277432AB26BE100077FC3 /* NavigationView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NavigationView;
+			sourceTree = "<group>";
+		};
+		B18277442AB26BF900077FC3 /* TwoColumns */ = {
+			isa = PBXGroup;
+			children = (
+				B182773A2AB1434B00077FC3 /* TwoColumnsView.swift */,
+				B18277422AB26B5600077FC3 /* Models */,
+				B18277412AB26B4900077FC3 /* Subviews */,
+			);
+			path = TwoColumns;
 			sourceTree = "<group>";
 		};
 		B1B0B26F2AB0A2740018845B /* StocksAPI */ = {
@@ -152,7 +175,8 @@
 		B1ECB2FE2AAFEDE700C823C9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B182773C2AB143A900077FC3 /* ListView */,
+				B18277442AB26BF900077FC3 /* TwoColumns */,
+				B18277432AB26BE100077FC3 /* NavigationView */,
 				B18277392AB1431900077FC3 /* CardView */,
 			);
 			path = Views;
@@ -229,15 +253,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1B0B2712AB0A2B70018845B /* StocksApiEndpoint.swift in Sources */,
-				B182773B2AB1434B00077FC3 /* ListView.swift in Sources */,
+				B182773B2AB1434B00077FC3 /* TwoColumnsView.swift in Sources */,
 				B1B0B2752AB0ABEA0018845B /* StocksApi.swift in Sources */,
-				B182773E2AB143CE00077FC3 /* ListItemView.swift in Sources */,
+				B182773E2AB143CE00077FC3 /* TwoColumnsItemView.swift in Sources */,
 				B1108A8B2AAF9AA80039B944 /* CardView.swift in Sources */,
 				B12069122AB00BC70048F22F /* PreviewProvider.swift in Sources */,
 				B120690E2AAFFD720048F22F /* PriceView.swift in Sources */,
 				B1108A892AAF9AA80039B944 /* StocksTrackerApp.swift in Sources */,
 				B1ECB3002AAFEE3400C823C9 /* HeaderView.swift in Sources */,
-				B18277402AB148B400077FC3 /* ListViewModel.swift in Sources */,
+				B18277402AB148B400077FC3 /* TwoColumnsItemViewModel.swift in Sources */,
 				B1B0B2732AB0ABCF0018845B /* StocksApiModels.swift in Sources */,
 				B1B0B27A2AB0C7EF0018845B /* CardViewModel.swift in Sources */,
 				B12069102AB008AB0048F22F /* StockData.swift in Sources */,

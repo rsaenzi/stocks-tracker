@@ -1,5 +1,5 @@
 //
-//  ListItemView.swift
+//  TwoColumnsItemView.swift
 //  StocksTracker
 //
 //  Created by Rigoberto Saenz on 12/09/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ListItemView: View {
+struct TwoColumnsItemView: View {
   var ticker: String
 
   var body: some View {
@@ -16,5 +16,5 @@ struct ListItemView: View {
 }
 
 #Preview {
-  ListItemView(ticker: PreviewProvider.test.data.ticker)
+  TwoColumnsItemView(ticker: PreviewProvider.test.data.ticker)
 }
