@@ -26,7 +26,7 @@ struct TwoColumnsView: View {
 
   var body: some View {
     VStack(alignment: .center, spacing: 20, content: {
-      Text("Portfolio")
+      Text("Stocks Portfolio")
         .font(.largeTitle)
         .foregroundStyle(.primary)
 

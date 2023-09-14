@@ -128,13 +128,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		B18277432AB26BE100077FC3 /* NavigationView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = NavigationView;
-			sourceTree = "<group>";
-		};
 		B18277442AB26BF900077FC3 /* TwoColumns */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,7 +169,6 @@
 			isa = PBXGroup;
 			children = (
 				B18277442AB26BF900077FC3 /* TwoColumns */,
-				B18277432AB26BE100077FC3 /* NavigationView */,
 				B18277392AB1431900077FC3 /* CardView */,
 			);
 			path = Views;
