@@ -102,6 +102,13 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		B116DDB52AB3983F00230E5E /* RightColumn */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RightColumn;
+			sourceTree = "<group>";
+		};
 		B18277392AB1431900077FC3 /* CardView */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,14 +135,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		B18277442AB26BF900077FC3 /* TwoColumns */ = {
+		B18277442AB26BF900077FC3 /* LeftColumn */ = {
 			isa = PBXGroup;
 			children = (
 				B182773A2AB1434B00077FC3 /* LeftColumnView.swift */,
 				B18277412AB26B4900077FC3 /* Subviews */,
 				B18277422AB26B5600077FC3 /* Models */,
 			);
-			path = TwoColumns;
+			path = LeftColumn;
 			sourceTree = "<group>";
 		};
 		B1B0B26F2AB0A2740018845B /* StocksAPI */ = {
@@ -168,7 +175,8 @@
 		B1ECB2FE2AAFEDE700C823C9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B18277442AB26BF900077FC3 /* TwoColumns */,
+				B116DDB52AB3983F00230E5E /* RightColumn */,
+				B18277442AB26BF900077FC3 /* LeftColumn */,
 				B18277392AB1431900077FC3 /* CardView */,
 			);
 			path = Views;

@@ -24,8 +24,10 @@ struct LeftColumnView: View {
   var body: some View {
     VStack(alignment: .center, spacing: 20, content: {
       Text("Stocks Tracker")
-        .font(.largeTitle)
-        .foregroundStyle(.primary)
+        .font(.extraLargeTitle)
+        .foregroundStyle(.yellow)
+        .offset(z: 30)
+        .shadow(radius: 5)
 
       NavigationSplitView {
 
