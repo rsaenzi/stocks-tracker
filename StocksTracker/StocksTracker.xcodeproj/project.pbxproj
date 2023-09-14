@@ -11,6 +11,7 @@
 		B1108A8B2AAF9AA80039B944 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1108A8A2AAF9AA80039B944 /* CardView.swift */; };
 		B1108A8D2AAF9AA90039B944 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1108A8C2AAF9AA90039B944 /* Assets.xcassets */; };
 		B1108A912AAF9AA90039B944 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1108A902AAF9AA90039B944 /* Preview Assets.xcassets */; };
+		B116DDB92AB3AFBB00230E5E /* RightColumnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B116DDB82AB3AFBB00230E5E /* RightColumnView.swift */; };
 		B120690E2AAFFD720048F22F /* PriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B120690D2AAFFD720048F22F /* PriceView.swift */; };
 		B12069102AB008AB0048F22F /* StockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B120690F2AB008AB0048F22F /* StockData.swift */; };
 		B12069122AB00BC70048F22F /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12069112AB00BC70048F22F /* PreviewProvider.swift */; };
@@ -31,6 +32,7 @@
 		B1108A8C2AAF9AA90039B944 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1108A8E2AAF9AA90039B944 /* StocksTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StocksTracker.entitlements; sourceTree = "<group>"; };
 		B1108A902AAF9AA90039B944 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B116DDB82AB3AFBB00230E5E /* RightColumnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightColumnView.swift; sourceTree = "<group>"; };
 		B120690D2AAFFD720048F22F /* PriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceView.swift; sourceTree = "<group>"; };
 		B120690F2AB008AB0048F22F /* StockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockData.swift; sourceTree = "<group>"; };
 		B12069112AB00BC70048F22F /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 		B116DDB52AB3983F00230E5E /* RightColumn */ = {
 			isa = PBXGroup;
 			children = (
+				B116DDB82AB3AFBB00230E5E /* RightColumnView.swift */,
 			);
 			path = RightColumn;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				B1108A8B2AAF9AA80039B944 /* CardView.swift in Sources */,
 				B12069122AB00BC70048F22F /* PreviewProvider.swift in Sources */,
 				B120690E2AAFFD720048F22F /* PriceView.swift in Sources */,
+				B116DDB92AB3AFBB00230E5E /* RightColumnView.swift in Sources */,
 				B1108A892AAF9AA80039B944 /* StocksTrackerApp.swift in Sources */,
 				B1ECB3002AAFEE3400C823C9 /* HeaderView.swift in Sources */,
 				B18277402AB148B400077FC3 /* LeftColumnCellModel.swift in Sources */,

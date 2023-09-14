@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LeftColumnView: View {
-  private var tickers: [LeftColumnCellModel] = [
+  private var tickers: [CardViewModel] = [
     .init(ticker: "AMD"),
     .init(ticker: "NVDA"),
     .init(ticker: "GOOG"),
@@ -31,12 +31,12 @@ struct LeftColumnView: View {
 
       NavigationSplitView {
 
-        List(tickers) { model in
+        List(tickers, id: \.data.id) { model in
           NavigationLink {
-            Text("Destination")
+            RightColumnView(stockData: model)
 
           } label: {
-            LeftColumnCell(ticker: model.ticker)
+            LeftColumnCell(ticker: model.data.ticker)
           }
         }
         .navigationTitle("Favorites")

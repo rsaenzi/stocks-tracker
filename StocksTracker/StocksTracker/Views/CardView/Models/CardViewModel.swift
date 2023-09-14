@@ -10,8 +10,8 @@ import Foundation
 class CardViewModel: ObservableObject {
   @Published var data: StockData
 
-  init(ticket: String) {
-    data = .init(ticker: ticket)
+  init(ticker: String) {
+    data = .init(ticker: ticker)
   }
 
   func viewWillAppear() async {

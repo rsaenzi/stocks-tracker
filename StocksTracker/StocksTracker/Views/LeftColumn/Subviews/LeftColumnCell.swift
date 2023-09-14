@@ -11,7 +11,7 @@ struct LeftColumnCell: View {
   @ObservedObject private var viewModel: CardViewModel
 
   init(ticker: String) {
-    self.viewModel = .init(ticket: ticker)
+    self.viewModel = .init(ticker: ticker)
   }
 
   var body: some View {

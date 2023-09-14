@@ -10,7 +10,7 @@ import SwiftUI
 
 struct PreviewProvider {
   static var test: CardViewModel {
-    let model = CardViewModel(ticket: "MSFT")
+    let model = CardViewModel(ticker: "MSFT")
     model.data.name = "Microsoft Corp"
     model.data.price = "$330.77"
     model.data.todayPercent = "↑ 1.68%"
