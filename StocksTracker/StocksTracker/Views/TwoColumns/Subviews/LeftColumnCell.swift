@@ -1,5 +1,5 @@
 //
-//  LeftColumnItem.swift
+//  LeftColumnCell.swift
 //  StocksTracker
 //
 //  Created by Rigoberto Saenz on 12/09/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LeftColumnItem: View {
+struct LeftColumnCell: View {
   @ObservedObject private var viewModel: CardViewModel
 
   init(ticker: String) {
@@ -67,5 +67,5 @@ struct LeftColumnItem: View {
 }
 
 #Preview {
-  LeftColumnItem(ticker: PreviewProvider.test.data.ticker)
+  LeftColumnCell(ticker: PreviewProvider.test.data.ticker)
 }

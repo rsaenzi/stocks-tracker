@@ -8,11 +8,7 @@
 import SwiftUI
 
 struct HeaderView: View {
-  private var data: StockData
-
-  init(data: StockData) {
-    self.data = data
-  }
+  var data: StockData
 
   var body: some View {
     HStack(alignment: .center, spacing: 10, content: {

@@ -11,7 +11,8 @@ import SwiftUI
 struct StocksTrackerApp: App {
   var body: some Scene {
     WindowGroup {
-      TwoColumnsView()
+      LeftColumnView()
     }
+    .windowStyle(.plain)
   }
 }

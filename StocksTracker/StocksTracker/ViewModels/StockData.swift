@@ -12,7 +12,7 @@ private let spaces = "       "
 private let initColor = Color.gray
 
 struct StockData: Identifiable {
-  let id = UUID()
+  var id: String { ticker }
   let ticker: String
 
   // Header

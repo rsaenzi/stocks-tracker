@@ -8,52 +8,44 @@
 import Foundation
 
 class StocksApi {
-  static func quotesShort(from symbols: [String]) async -> [StocksApiQuoteShort] {
-    guard let data = await connect(to: .quoteShort(symbols: symbols)) else {
-      return []
+  static func quoteShort(for symbol: String) async -> StocksApiQuoteShort {
+    guard let data = await connect(to: .quoteShort(symbols: [symbol])),
+          let results: [StocksApiQuoteShort] = decode(from: data),
+          let quoteShort = results.first else {
+      return StocksApiQuoteShort(symbol: symbol)
     }
 
-    guard let result: [StocksApiQuoteShort] = decode(from: data) else {
-      return []
-    }
-
-    return result
+    return quoteShort
   }
 
-  static func quotes(from symbols: [String]) async -> [StocksApiQuote] {
-    guard let data = await connect(to: .quote(symbols: symbols)) else {
-      return []
+  static func quote(for symbol: String) async -> StocksApiQuote {
+    guard let data = await connect(to: .quote(symbols: [symbol])),
+          let results: [StocksApiQuote] = decode(from: data),
+          let quote = results.first else {
+      return StocksApiQuote(symbol: symbol)
     }
 
-    guard let result: [StocksApiQuote] = decode(from: data) else {
-      return []
-    }
-
-    return result
+    return quote
   }
 
-  static func priceChanges(from symbols: [String]) async -> [StocksApiPriceChange] {
-    guard let data = await connect(to: .priceChange(symbols: symbols)) else {
-      return []
+  static func priceChanges(for symbol: String) async -> StocksApiPriceChange {
+    guard let data = await connect(to: .priceChange(symbols: [symbol])),
+          let results: [StocksApiPriceChange] = decode(from: data),
+          let priceChanges = results.first else {
+      return StocksApiPriceChange(symbol: symbol)
     }
 
-    guard let result: [StocksApiPriceChange] = decode(from: data) else {
-      return []
-    }
-
-    return result
+    return priceChanges
   }
 
-  static func profiles(from symbols: [String]) async -> [StocksApiProfile] {
-    guard let data = await connect(to: .profile(symbols: symbols)) else {
-      return []
+  static func profile(for symbol: String) async -> StocksApiProfile {
+    guard let data = await connect(to: .profile(symbols: [symbol])),
+          let results: [StocksApiProfile] = decode(from: data),
+          let profile = results.first else {
+      return StocksApiProfile(symbol: symbol)
     }
 
-    guard let result: [StocksApiProfile] = decode(from: data) else {
-      return []
-    }
-
-    return result
+    return profile
   }
 }
 
@@ -77,3 +69,4 @@ extension StocksApi {
     }
   }
 }
+

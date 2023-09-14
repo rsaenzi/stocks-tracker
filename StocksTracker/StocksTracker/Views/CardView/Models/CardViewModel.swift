@@ -20,7 +20,7 @@ class CardViewModel: ObservableObject {
   }
 
   func quoteShort() async {
-    guard let quoteShort = await StocksApi.quotesShort(from: [data.ticker]).first else { return }
+    let quoteShort = await StocksApi.quoteShort(for: data.ticker)
 
     await MainActor.run {
       data.price = "$\(String(format: "%.2f", quoteShort.price))"
@@ -28,7 +28,7 @@ class CardViewModel: ObservableObject {
   }
 
   func quote() async {
-    guard let quote = await StocksApi.quotes(from: [data.ticker]).first else { return }
+    let quote = await StocksApi.quote(for: data.ticker)
 
     await MainActor.run {
       data.name = quote.name
@@ -46,7 +46,7 @@ class CardViewModel: ObservableObject {
   }
 
   func priceChanges() async {
-    guard let priceChanges = await StocksApi.priceChanges(from: [data.ticker]).first else { return }
+    let priceChanges = await StocksApi.priceChanges(for: data.ticker)
 
     await MainActor.run {
       if priceChanges.oneMonth >= 0 {

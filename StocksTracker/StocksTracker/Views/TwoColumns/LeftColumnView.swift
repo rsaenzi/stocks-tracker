@@ -1,5 +1,5 @@
 //
-//  TwoColumnsView.swift
+//  LeftColumnView.swift
 //  StocksTracker
 //
 //  Created by Rigoberto Saenz on 12/09/23.
@@ -7,16 +7,13 @@
 
 import SwiftUI
 
-struct TwoColumnsView: View {
-  private var tickersLeft: [TwoColumnsItemViewModel] = [
+struct LeftColumnView: View {
+  private var tickers: [LeftColumnCellModel] = [
     .init(ticker: "AMD"),
     .init(ticker: "NVDA"),
     .init(ticker: "GOOG"),
     .init(ticker: "AMZN"),
     .init(ticker: "PLTR"),
-  ]
-
-  private var tickersRight: [TwoColumnsItemViewModel] = [
     .init(ticker: "AVGO"),
     .init(ticker: "AAPL"),
     .init(ticker: "MSFT"),
@@ -26,22 +23,30 @@ struct TwoColumnsView: View {
 
   var body: some View {
     VStack(alignment: .center, spacing: 20, content: {
-      Text("Stocks Portfolio")
+      Text("Stocks Tracker")
         .font(.largeTitle)
         .foregroundStyle(.primary)
 
-      HStack(alignment: .center, spacing: 0, content: {
-        List(tickersLeft) {
-          TwoColumnsItemView(ticker: $0.ticker)
+      NavigationSplitView {
+
+        List(tickers) { model in
+          NavigationLink {
+            Text("Destination")
+
+          } label: {
+            LeftColumnCell(ticker: model.ticker)
+          }
         }
-        List(tickersRight) {
-          TwoColumnsItemView(ticker: $0.ticker)
-        }
-      })
+        .navigationTitle("Favorites")
+
+      } detail: {
+        Text("Destination")
+      }
+
     })
   }
 }
 
 #Preview {
-  TwoColumnsView()
+  LeftColumnView()
 }

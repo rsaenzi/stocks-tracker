@@ -10,6 +10,12 @@ import Foundation
 struct StocksApiQuoteShort: Codable {
   let symbol: String
   let price: Float
+
+  /// Initializes this object using mock data
+  init(symbol: String) {
+    self.symbol = symbol
+    self.price = Float.random(in: -20...20)
+  }
 }
 
 struct StocksApiQuote: Codable {
@@ -21,6 +27,18 @@ struct StocksApiQuote: Codable {
   let exchange: String
   let eps: Float
   let pe: Float
+
+  /// Initializes this object using mock data
+  init(symbol: String) {
+    self.symbol = symbol
+    self.name = ""
+    self.price = Float.random(in: 0...500)
+    self.changesPercentage = Float.random(in: -20...20)
+    self.change = Float.random(in: -20...20)
+    self.exchange = "NASDAQ"
+    self.eps = Float.random(in: -20...20)
+    self.pe = Float.random(in: -20...20)
+  }
 }
 
 struct StocksApiPriceChange: Codable {
@@ -36,6 +54,22 @@ struct StocksApiPriceChange: Codable {
   let fiveYears: Float
   let tenYears: Float
   let max: Float
+
+  /// Initializes this object using mock data
+  init(symbol: String) {
+    self.symbol = symbol
+    self.oneDay = Float.random(in: -20...20)
+    self.fiveDays = Float.random(in: -20...20)
+    self.oneMonth = Float.random(in: -20...20)
+    self.threeMonths = Float.random(in: -20...20)
+    self.sixMonths = Float.random(in: -20...20)
+    self.ytd = Float.random(in: -20...20)
+    self.oneYear = Float.random(in: -20...20)
+    self.threeYears = Float.random(in: -20...20)
+    self.fiveYears = Float.random(in: -20...20)
+    self.tenYears = Float.random(in: -20...20)
+    self.max = Float.random(in: -20...20)
+  }
 
   enum CodingKeys: String, CodingKey {
     case symbol = "symbol"
@@ -74,4 +108,28 @@ struct StocksApiProfile: Codable {
   let zip: String
   let image: String
   let ipoDate: String
+
+  /// Initializes this object using mock data
+  init(symbol: String) {
+    self.symbol = symbol
+    self.price = Float.random(in: 0...500)
+    self.companyName = ""
+    self.currency = ""
+    self.exchange = ""
+    self.exchangeShortName = ""
+    self.industry = ""
+    self.website = ""
+    self.description = ""
+    self.ceo = ""
+    self.sector = ""
+    self.country = ""
+    self.fullTimeEmployees = Float.random(in: 500...2000)
+    self.phone = ""
+    self.address = ""
+    self.city = ""
+    self.state = ""
+    self.zip = ""
+    self.image = ""
+    self.ipoDate = ""
+  }
 }
