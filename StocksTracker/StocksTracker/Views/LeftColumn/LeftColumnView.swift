@@ -25,7 +25,7 @@ struct LeftColumnView: View {
     VStack(alignment: .center, spacing: 20, content: {
       Text("Stocks Tracker")
         .font(.extraLargeTitle)
-        .foregroundStyle(.yellow)
+        .foregroundStyle(.primary)
         .offset(z: 30)
         .shadow(radius: 5)
 
@@ -39,10 +39,11 @@ struct LeftColumnView: View {
             LeftColumnCell(ticker: model.data.ticker)
           }
         }
-        .navigationTitle("Favorites")
+        .navigationTitle("Portfolio")
 
       } detail: {
-        Text("Destination")
+        Text("Pick any stock on the left")
+          .font(.title2)
       }
 
     })

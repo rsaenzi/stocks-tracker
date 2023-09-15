@@ -27,8 +27,11 @@ struct RightColumnView: View {
 
   var body: some View {
 
-    VStack(alignment: .center, spacing: 10, content: {
+    VStack(alignment: .center, spacing: 20, content: {
       Text(stockData.data.ticker)
+        .font(.extraLargeTitle)
+        .foregroundStyle(.primary)
+        .offset(z: 30)
 
       Chart(data) { point in
         LineMark(
@@ -40,6 +43,7 @@ struct RightColumnView: View {
           y: .value("Price", point.price)
         )
       }
+      .foregroundStyle(.white)
       .chartYAxis {
         AxisMarks(values: .automatic(desiredCount: 5))
       }
@@ -48,6 +52,13 @@ struct RightColumnView: View {
       }
       .padding(40)
     })
+    .background(
+      LinearGradient(
+        colors: stockData.data.backgroundColors.map{$0.opacity(0.4)},
+        startPoint: .topLeading,
+        endPoint: .bottomTrailing
+      )
+    )
   }
 }
 
